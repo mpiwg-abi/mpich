@@ -6,7 +6,6 @@
  */
 #define MPICH_SUPPRESS_PROTOTYPES
 #include "mpi.h"
-#include "mpi_pmpi.h"
 
 int MPI_Init(int *argc, char ***argv)
 {
