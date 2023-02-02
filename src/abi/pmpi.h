@@ -212,8 +212,8 @@ typedef enum MPIR_Win_model {
 typedef enum MPIR_Topo_type { PMPI_GRAPH=1, PMPI_CART=2, PMPI_DIST_GRAPH=3 } MPIR_Topo_type;
 
 #define PMPI_BOTTOM      (void *)0
-extern int * const PMPI_UNWEIGHTED MPICH_API_PUBLIC;
-extern int * const PMPI_WEIGHTS_EMPTY MPICH_API_PUBLIC;
+extern int * const PMPI_UNWEIGHTED;
+extern int * const PMPI_WEIGHTS_EMPTY;
 
 #define PMPI_PROC_NULL   (-1)
 #define PMPI_ANY_SOURCE 	(-2)
@@ -443,7 +443,7 @@ typedef struct MPIR_T_event_registration_s * PMPI_T_event_registration;
 typedef struct MPIR_T_event_instance_s * PMPI_T_event_instance;
 
 /* extra const at front would be safer, but is incompatible with PMPI_T_ prototypes */
-extern struct MPIR_T_pvar_handle_s * const PMPI_T_PVAR_ALL_HANDLES MPICH_API_PUBLIC;
+extern struct MPIR_T_pvar_handle_s * const PMPI_T_PVAR_ALL_HANDLES;
 
 #define PMPI_T_ENUM_NULL         ((PMPI_T_enum)NULL)
 #define PMPI_T_CVAR_HANDLE_NULL  ((PMPI_T_cvar_handle)NULL)
@@ -594,8 +594,8 @@ typedef void (PMPI_T_event_dropped_cb_function)(PMPI_Count count, PMPI_T_event_r
 
 /* See 4.12.5 for PMPI_F_STATUS(ES)_IGNORE */
 #define MPIU_DLL_SPEC
-extern MPIU_DLL_SPEC PMPI_Fint * PMPI_F_STATUS_IGNORE MPICH_API_PUBLIC;
-extern MPIU_DLL_SPEC PMPI_Fint * PMPI_F_STATUSES_IGNORE MPICH_API_PUBLIC;
+extern MPIU_DLL_SPEC PMPI_Fint * PMPI_F_STATUS_IGNORE;
+extern MPIU_DLL_SPEC PMPI_Fint * PMPI_F_STATUSES_IGNORE;
 /* The annotation MPIU_DLL_SPEC to the extern statements is used 
    as a hook for systems that require C extensions to correctly construct
    DLLs, and is defined as an empty string otherwise
@@ -789,7 +789,7 @@ typedef struct PMPIX_Iov {
     PMPI_Aint iov_len;
 } PMPIX_Iov;
 
-#include "mpi_proto.h"
+#include "pmpi_proto.h"
 
 /* GPU extensions */
 #define PMPIX_GPU_SUPPORT_CUDA  (0)

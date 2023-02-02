@@ -44,81 +44,81 @@ int PMPI_Win_get_attr(PMPI_Win win, int win_keyval, void *attribute_val, int *fl
 int PMPI_Win_set_attr(PMPI_Win win, int win_keyval, void *attribute_val);
 int PMPI_Allgather(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                    int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                   ;
 int PMPI_Allgather_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                      PMPI_Count recvcount, PMPI_Datatype recvtype, PMPI_Comm comm)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                     ;
 int PMPI_Allgather_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                         int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Info info,
                         PMPI_Request *request)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                        ;
 int PMPI_Allgather_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                           void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                           PMPI_Info info, PMPI_Request *request)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                          ;
 int PMPI_Allgatherv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                     const int recvcounts[], const int displs[], PMPI_Datatype recvtype,
                     PMPI_Comm comm)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                    ;
 int PMPI_Allgatherv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                       void *recvbuf, const PMPI_Count recvcounts[], const PMPI_Aint displs[],
                       PMPI_Datatype recvtype, PMPI_Comm comm)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                      ;
 int PMPI_Allgatherv_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                          const int recvcounts[], const int displs[], PMPI_Datatype recvtype,
                          PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                         ;
 int PMPI_Allgatherv_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                            void *recvbuf, const PMPI_Count recvcounts[], const PMPI_Aint displs[],
                            PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Info info,
                            PMPI_Request *request)
-                           MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                           ;
 int PMPI_Allreduce(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                    PMPI_Comm comm)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                   ;
 int PMPI_Allreduce_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                      PMPI_Op op, PMPI_Comm comm)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                     ;
 int PMPI_Allreduce_init(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype,
                         PMPI_Op op, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                        ;
 int PMPI_Allreduce_init_c(const void *sendbuf, void *recvbuf, PMPI_Count count,
                           PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm, PMPI_Info info,
                           PMPI_Request *request)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                          ;
 int PMPI_Alltoall(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                   int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                  ;
 int PMPI_Alltoall_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                     PMPI_Count recvcount, PMPI_Datatype recvtype, PMPI_Comm comm)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                    ;
 int PMPI_Alltoall_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                        int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Info info,
                        PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                       ;
 int PMPI_Alltoall_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                          void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                          PMPI_Info info, PMPI_Request *request)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                         ;
 int PMPI_Alltoallv(const void *sendbuf, const int sendcounts[], const int sdispls[],
                    PMPI_Datatype sendtype, void *recvbuf, const int recvcounts[],
                    const int rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                   ;
 int PMPI_Alltoallv_c(const void *sendbuf, const PMPI_Count sendcounts[], const PMPI_Aint sdispls[],
                      PMPI_Datatype sendtype, void *recvbuf, const PMPI_Count recvcounts[],
                      const PMPI_Aint rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                     ;
 int PMPI_Alltoallv_init(const void *sendbuf, const int sendcounts[], const int sdispls[],
                         PMPI_Datatype sendtype, void *recvbuf, const int recvcounts[],
                         const int rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Info info,
                         PMPI_Request *request)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                        ;
 int PMPI_Alltoallv_init_c(const void *sendbuf, const PMPI_Count sendcounts[],
                           const PMPI_Aint sdispls[], PMPI_Datatype sendtype, void *recvbuf,
                           const PMPI_Count recvcounts[], const PMPI_Aint rdispls[],
                           PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Info info,
                           PMPI_Request *request)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                          ;
 int PMPI_Alltoallw(const void *sendbuf, const int sendcounts[], const int sdispls[],
                    const PMPI_Datatype sendtypes[], void *recvbuf, const int recvcounts[],
                    const int rdispls[], const PMPI_Datatype recvtypes[], PMPI_Comm comm)
@@ -139,96 +139,96 @@ int PMPI_Alltoallw_init_c(const void *sendbuf, const PMPI_Count sendcounts[],
 int PMPI_Barrier(PMPI_Comm comm);
 int PMPI_Barrier_init(PMPI_Comm comm, PMPI_Info info, PMPI_Request *request);
 int PMPI_Bcast(void *buffer, int count, PMPI_Datatype datatype, int root, PMPI_Comm comm)
-    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+    ;
 int PMPI_Bcast_c(void *buffer, PMPI_Count count, PMPI_Datatype datatype, int root, PMPI_Comm comm)
-    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+    ;
 int PMPI_Bcast_init(void *buffer, int count, PMPI_Datatype datatype, int root, PMPI_Comm comm,
                     PMPI_Info info, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                    ;
 int PMPI_Bcast_init_c(void *buffer, PMPI_Count count, PMPI_Datatype datatype, int root, PMPI_Comm comm,
                       PMPI_Info info, PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                      ;
 int PMPI_Exscan(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                 PMPI_Comm comm)
-                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                ;
 int PMPI_Exscan_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                   PMPI_Op op, PMPI_Comm comm)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                  ;
 int PMPI_Exscan_init(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype,
                      PMPI_Op op, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                     ;
 int PMPI_Exscan_init_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                        PMPI_Op op, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                       ;
 int PMPI_Gather(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                 int recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm)
-                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                ;
 int PMPI_Gather_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                   PMPI_Count recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                  ;
 int PMPI_Gather_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                      int recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm, PMPI_Info info,
                      PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                     ;
 int PMPI_Gather_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                        void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype, int root,
                        PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                       ;
 int PMPI_Gatherv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                  const int recvcounts[], const int displs[], PMPI_Datatype recvtype, int root,
                  PMPI_Comm comm)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                 ;
 int PMPI_Gatherv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                    const PMPI_Count recvcounts[], const PMPI_Aint displs[], PMPI_Datatype recvtype,
                    int root, PMPI_Comm comm)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                   ;
 int PMPI_Gatherv_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                       const int recvcounts[], const int displs[], PMPI_Datatype recvtype, int root,
                       PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                      ;
 int PMPI_Gatherv_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                         void *recvbuf, const PMPI_Count recvcounts[], const PMPI_Aint displs[],
                         PMPI_Datatype recvtype, int root, PMPI_Comm comm, PMPI_Info info,
                         PMPI_Request *request)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                        ;
 int PMPI_Iallgather(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                     int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                    ;
 int PMPI_Iallgather_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                       void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                       PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                      ;
 int PMPI_Iallgatherv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                      const int recvcounts[], const int displs[], PMPI_Datatype recvtype,
                      PMPI_Comm comm, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                     ;
 int PMPI_Iallgatherv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                        void *recvbuf, const PMPI_Count recvcounts[], const PMPI_Aint displs[],
                        PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                       ;
 int PMPI_Iallreduce(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                     PMPI_Comm comm, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                    ;
 int PMPI_Iallreduce_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                       PMPI_Op op, PMPI_Comm comm, PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                      ;
 int PMPI_Ialltoall(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                    int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                   ;
 int PMPI_Ialltoall_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                      PMPI_Count recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                      PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                     ;
 int PMPI_Ialltoallv(const void *sendbuf, const int sendcounts[], const int sdispls[],
                     PMPI_Datatype sendtype, void *recvbuf, const int recvcounts[],
                     const int rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm,
                     PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                    ;
 int PMPI_Ialltoallv_c(const void *sendbuf, const PMPI_Count sendcounts[], const PMPI_Aint sdispls[],
                       PMPI_Datatype sendtype, void *recvbuf, const PMPI_Count recvcounts[],
                       const PMPI_Aint rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm,
                       PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                      ;
 int PMPI_Ialltoallw(const void *sendbuf, const int sendcounts[], const int sdispls[],
                     const PMPI_Datatype sendtypes[], void *recvbuf, const int recvcounts[],
                     const int rdispls[], const PMPI_Datatype recvtypes[], PMPI_Comm comm,
@@ -239,66 +239,66 @@ int PMPI_Ialltoallw_c(const void *sendbuf, const PMPI_Count sendcounts[], const 
                       PMPI_Request *request);
 int PMPI_Ibarrier(PMPI_Comm comm, PMPI_Request *request);
 int PMPI_Ibcast(void *buffer, int count, PMPI_Datatype datatype, int root, PMPI_Comm comm,
-                PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                PMPI_Request *request) ;
 int PMPI_Ibcast_c(void *buffer, PMPI_Count count, PMPI_Datatype datatype, int root, PMPI_Comm comm,
-                  PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                  PMPI_Request *request) ;
 int PMPI_Iexscan(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                  PMPI_Comm comm, PMPI_Request *request)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                 ;
 int PMPI_Iexscan_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                    PMPI_Op op, PMPI_Comm comm, PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                   ;
 int PMPI_Igather(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                  int recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm,
                  PMPI_Request *request)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                 ;
 int PMPI_Igather_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                    PMPI_Count recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm,
                    PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                   ;
 int PMPI_Igatherv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                   const int recvcounts[], const int displs[], PMPI_Datatype recvtype, int root,
                   PMPI_Comm comm, PMPI_Request *request)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                  ;
 int PMPI_Igatherv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                     const PMPI_Count recvcounts[], const PMPI_Aint displs[], PMPI_Datatype recvtype,
                     int root, PMPI_Comm comm, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                    ;
 int PMPI_Ineighbor_allgather(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                              void *recvbuf, int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                              PMPI_Request *request)
-                             MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                             ;
 int PMPI_Ineighbor_allgather_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                                void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                                PMPI_Comm comm, PMPI_Request *request)
-                               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                               ;
 int PMPI_Ineighbor_allgatherv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                               void *recvbuf, const int recvcounts[], const int displs[],
                               PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Request *request)
-                              MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                              ;
 int PMPI_Ineighbor_allgatherv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                                 void *recvbuf, const PMPI_Count recvcounts[],
                                 const PMPI_Aint displs[], PMPI_Datatype recvtype, PMPI_Comm comm,
                                 PMPI_Request *request)
-                                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                                ;
 int PMPI_Ineighbor_alltoall(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                             void *recvbuf, int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                             PMPI_Request *request)
-                            MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                            ;
 int PMPI_Ineighbor_alltoall_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                               void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                               PMPI_Comm comm, PMPI_Request *request)
-                              MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                              ;
 int PMPI_Ineighbor_alltoallv(const void *sendbuf, const int sendcounts[], const int sdispls[],
                              PMPI_Datatype sendtype, void *recvbuf, const int recvcounts[],
                              const int rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm,
                              PMPI_Request *request)
-                             MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                             ;
 int PMPI_Ineighbor_alltoallv_c(const void *sendbuf, const PMPI_Count sendcounts[],
                                const PMPI_Aint sdispls[], PMPI_Datatype sendtype, void *recvbuf,
                                const PMPI_Count recvcounts[], const PMPI_Aint rdispls[],
                                PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Request *request)
-                               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                               ;
 int PMPI_Ineighbor_alltoallw(const void *sendbuf, const int sendcounts[], const PMPI_Aint sdispls[],
                              const PMPI_Datatype sendtypes[], void *recvbuf, const int recvcounts[],
                              const PMPI_Aint rdispls[], const PMPI_Datatype recvtypes[],
@@ -310,114 +310,114 @@ int PMPI_Ineighbor_alltoallw_c(const void *sendbuf, const PMPI_Count sendcounts[
                                PMPI_Comm comm, PMPI_Request *request);
 int PMPI_Ireduce(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                  int root, PMPI_Comm comm, PMPI_Request *request)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                 ;
 int PMPI_Ireduce_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                    PMPI_Op op, int root, PMPI_Comm comm, PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                   ;
 int PMPI_Ireduce_scatter(const void *sendbuf, void *recvbuf, const int recvcounts[],
                          PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm, PMPI_Request *request)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                         ;
 int PMPI_Ireduce_scatter_c(const void *sendbuf, void *recvbuf, const PMPI_Count recvcounts[],
                            PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm, PMPI_Request *request)
-                           MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                           ;
 int PMPI_Ireduce_scatter_block(const void *sendbuf, void *recvbuf, int recvcount,
                                PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm,
                                PMPI_Request *request)
-                               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                               ;
 int PMPI_Ireduce_scatter_block_c(const void *sendbuf, void *recvbuf, PMPI_Count recvcount,
                                  PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm,
                                  PMPI_Request *request)
-                                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                                 ;
 int PMPI_Iscan(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                PMPI_Comm comm, PMPI_Request *request)
-               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+               ;
 int PMPI_Iscan_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                  PMPI_Op op, PMPI_Comm comm, PMPI_Request *request)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                 ;
 int PMPI_Iscatter(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                   int recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm,
                   PMPI_Request *request)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                  ;
 int PMPI_Iscatter_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                     PMPI_Count recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm,
                     PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                    ;
 int PMPI_Iscatterv(const void *sendbuf, const int sendcounts[], const int displs[],
                    PMPI_Datatype sendtype, void *recvbuf, int recvcount, PMPI_Datatype recvtype,
                    int root, PMPI_Comm comm, PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,7);
+                   ;
 int PMPI_Iscatterv_c(const void *sendbuf, const PMPI_Count sendcounts[], const PMPI_Aint displs[],
                      PMPI_Datatype sendtype, void *recvbuf, PMPI_Count recvcount,
                      PMPI_Datatype recvtype, int root, PMPI_Comm comm, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,7);
+                     ;
 int PMPI_Neighbor_allgather(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                             void *recvbuf, int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm)
-                            MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                            ;
 int PMPI_Neighbor_allgather_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                               void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                               PMPI_Comm comm)
-                              MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                              ;
 int PMPI_Neighbor_allgather_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                                  void *recvbuf, int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                                  PMPI_Info info, PMPI_Request *request)
-                                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                                 ;
 int PMPI_Neighbor_allgather_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                                    void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                                    PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                                   ;
 int PMPI_Neighbor_allgatherv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                              void *recvbuf, const int recvcounts[], const int displs[],
                              PMPI_Datatype recvtype, PMPI_Comm comm)
-                             MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                             ;
 int PMPI_Neighbor_allgatherv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                                void *recvbuf, const PMPI_Count recvcounts[], const PMPI_Aint displs[],
                                PMPI_Datatype recvtype, PMPI_Comm comm)
-                               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                               ;
 int PMPI_Neighbor_allgatherv_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                                   void *recvbuf, const int recvcounts[], const int displs[],
                                   PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Info info,
                                   PMPI_Request *request)
-                                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                                  ;
 int PMPI_Neighbor_allgatherv_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                                     void *recvbuf, const PMPI_Count recvcounts[],
                                     const PMPI_Aint displs[], PMPI_Datatype recvtype, PMPI_Comm comm,
                                     PMPI_Info info, PMPI_Request *request)
-                                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,7);
+                                    ;
 int PMPI_Neighbor_alltoall(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                            int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm)
-                           MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                           ;
 int PMPI_Neighbor_alltoall_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                              void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                              PMPI_Comm comm)
-                             MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                             ;
 int PMPI_Neighbor_alltoall_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype,
                                 void *recvbuf, int recvcount, PMPI_Datatype recvtype, PMPI_Comm comm,
                                 PMPI_Info info, PMPI_Request *request)
-                                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                                ;
 int PMPI_Neighbor_alltoall_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                                   void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                                   PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                                  ;
 int PMPI_Neighbor_alltoallv(const void *sendbuf, const int sendcounts[], const int sdispls[],
                             PMPI_Datatype sendtype, void *recvbuf, const int recvcounts[],
                             const int rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm)
-                            MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                            ;
 int PMPI_Neighbor_alltoallv_c(const void *sendbuf, const PMPI_Count sendcounts[],
                               const PMPI_Aint sdispls[], PMPI_Datatype sendtype, void *recvbuf,
                               const PMPI_Count recvcounts[], const PMPI_Aint rdispls[],
                               PMPI_Datatype recvtype, PMPI_Comm comm)
-                              MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                              ;
 int PMPI_Neighbor_alltoallv_init(const void *sendbuf, const int sendcounts[], const int sdispls[],
                                  PMPI_Datatype sendtype, void *recvbuf, const int recvcounts[],
                                  const int rdispls[], PMPI_Datatype recvtype, PMPI_Comm comm,
                                  PMPI_Info info, PMPI_Request *request)
-                                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                                 ;
 int PMPI_Neighbor_alltoallv_init_c(const void *sendbuf, const PMPI_Count sendcounts[],
                                    const PMPI_Aint sdispls[], PMPI_Datatype sendtype, void *recvbuf,
                                    const PMPI_Count recvcounts[], const PMPI_Aint rdispls[],
                                    PMPI_Datatype recvtype, PMPI_Comm comm, PMPI_Info info,
                                    PMPI_Request *request)
-                                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,8);
+                                   ;
 int PMPI_Neighbor_alltoallw(const void *sendbuf, const int sendcounts[], const PMPI_Aint sdispls[],
                             const PMPI_Datatype sendtypes[], void *recvbuf, const int recvcounts[],
                             const PMPI_Aint rdispls[], const PMPI_Datatype recvtypes[],
@@ -439,93 +439,93 @@ int PMPI_Neighbor_alltoallw_init_c(const void *sendbuf, const PMPI_Count sendcou
                                   ;
 int PMPI_Reduce(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                 int root, PMPI_Comm comm)
-                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                ;
 int PMPI_Reduce_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                   PMPI_Op op, int root, PMPI_Comm comm)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                  ;
 int PMPI_Reduce_init(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype,
                      PMPI_Op op, int root, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                     ;
 int PMPI_Reduce_init_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                        PMPI_Op op, int root, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                       ;
 int PMPI_Reduce_local(const void *inbuf, void *inoutbuf, int count, PMPI_Datatype datatype,
                       PMPI_Op op)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                      ;
 int PMPI_Reduce_local_c(const void *inbuf, void *inoutbuf, PMPI_Count count, PMPI_Datatype datatype,
                         PMPI_Op op)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                        ;
 int PMPI_Reduce_scatter(const void *sendbuf, void *recvbuf, const int recvcounts[],
                         PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                        ;
 int PMPI_Reduce_scatter_c(const void *sendbuf, void *recvbuf, const PMPI_Count recvcounts[],
                           PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                          ;
 int PMPI_Reduce_scatter_block(const void *sendbuf, void *recvbuf, int recvcount,
                               PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm)
-                              MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                              ;
 int PMPI_Reduce_scatter_block_c(const void *sendbuf, void *recvbuf, PMPI_Count recvcount,
                                 PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm)
-                                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                                ;
 int PMPI_Reduce_scatter_block_init(const void *sendbuf, void *recvbuf, int recvcount,
                                    PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm, PMPI_Info info,
                                    PMPI_Request *request)
-                                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                                   ;
 int PMPI_Reduce_scatter_block_init_c(const void *sendbuf, void *recvbuf, PMPI_Count recvcount,
                                      PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm, PMPI_Info info,
                                      PMPI_Request *request)
-                                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                                     ;
 int PMPI_Reduce_scatter_init(const void *sendbuf, void *recvbuf, const int recvcounts[],
                              PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm, PMPI_Info info,
                              PMPI_Request *request)
-                             MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                             ;
 int PMPI_Reduce_scatter_init_c(const void *sendbuf, void *recvbuf, const PMPI_Count recvcounts[],
                                PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm, PMPI_Info info,
                                PMPI_Request *request)
-                               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                               ;
 int PMPI_Scan(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
               PMPI_Comm comm)
-              MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+              ;
 int PMPI_Scan_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                 PMPI_Op op, PMPI_Comm comm)
-                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                ;
 int PMPI_Scan_init(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype, PMPI_Op op,
                    PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                   ;
 int PMPI_Scan_init_c(const void *sendbuf, void *recvbuf, PMPI_Count count, PMPI_Datatype datatype,
                      PMPI_Op op, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                     ;
 int PMPI_Scatter(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                  int recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                 ;
 int PMPI_Scatter_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, void *recvbuf,
                    PMPI_Count recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                   ;
 int PMPI_Scatter_init(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, void *recvbuf,
                       int recvcount, PMPI_Datatype recvtype, int root, PMPI_Comm comm, PMPI_Info info,
                       PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                      ;
 int PMPI_Scatter_init_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype,
                         void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype, int root,
                         PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                        ;
 int PMPI_Scatterv(const void *sendbuf, const int sendcounts[], const int displs[],
                   PMPI_Datatype sendtype, void *recvbuf, int recvcount, PMPI_Datatype recvtype,
                   int root, PMPI_Comm comm)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,7);
+                  ;
 int PMPI_Scatterv_c(const void *sendbuf, const PMPI_Count sendcounts[], const PMPI_Aint displs[],
                     PMPI_Datatype sendtype, void *recvbuf, PMPI_Count recvcount,
                     PMPI_Datatype recvtype, int root, PMPI_Comm comm)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,7);
+                    ;
 int PMPI_Scatterv_init(const void *sendbuf, const int sendcounts[], const int displs[],
                        PMPI_Datatype sendtype, void *recvbuf, int recvcount, PMPI_Datatype recvtype,
                        int root, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,7);
+                       ;
 int PMPI_Scatterv_init_c(const void *sendbuf, const PMPI_Count sendcounts[], const PMPI_Aint displs[],
                          PMPI_Datatype sendtype, void *recvbuf, PMPI_Count recvcount,
                          PMPI_Datatype recvtype, int root, PMPI_Comm comm, PMPI_Info info,
                          PMPI_Request *request)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4) MPICH_ATTR_POINTER_WITH_TYPE_TAG(5,7);
+                         ;
 int PMPI_Comm_compare(PMPI_Comm comm1, PMPI_Comm comm2, int *result);
 int PMPI_Comm_create(PMPI_Comm comm, PMPI_Group group, PMPI_Comm *newcomm);
 int PMPI_Comm_create_group(PMPI_Comm comm, PMPI_Group group, int tag, PMPI_Comm *newcomm)
@@ -713,7 +713,7 @@ int PMPI_Type_struct(int count, int array_of_blocklengths[], PMPI_Aint array_of_
                      PMPI_Datatype array_of_types[], PMPI_Datatype *newtype);
 int PMPIX_Type_iov_len(PMPI_Datatype datatype, PMPI_Count max_iov_bytes, PMPI_Count *iov_len,
                        PMPI_Count *actual_iov_bytes);
-int PMPIX_Type_iov(PMPI_Datatype datatype, PMPI_Count iov_offset, MPIX_Iov *iov,
+int PMPIX_Type_iov(PMPI_Datatype datatype, PMPI_Count iov_offset, PMPIX_Iov *iov,
                    PMPI_Count max_iov_len, PMPI_Count *actual_iov_len);
 int PMPI_Add_error_class(int *errorclass);
 int PMPI_Add_error_code(int errorclass, int *errorcode);
@@ -826,134 +826,134 @@ int PMPI_Pready_list(int length, const int array_of_partitions[], PMPI_Request r
 int PMPI_Pready_range(int partition_low, int partition_high, PMPI_Request request);
 int PMPI_Precv_init(void *buf, int partitions, PMPI_Count count, PMPI_Datatype datatype, int dest,
                     int tag, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4);
+                    ;
 int PMPI_Psend_init(const void *buf, int partitions, PMPI_Count count, PMPI_Datatype datatype,
                     int dest, int tag, PMPI_Comm comm, PMPI_Info info, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,4);
+                    ;
 int PMPI_Bsend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm)
-    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+    ;
 int PMPI_Bsend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
-                 PMPI_Comm comm) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                 PMPI_Comm comm) ;
 int PMPI_Bsend_init(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
                     PMPI_Comm comm, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                    ;
 int PMPI_Bsend_init_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                       PMPI_Comm comm, PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                      ;
 int PMPI_Buffer_attach(void *buffer, int size);
 int PMPI_Buffer_attach_c(void *buffer, PMPI_Count size);
 int PMPI_Buffer_detach(void *buffer_addr, int *size);
 int PMPI_Buffer_detach_c(void *buffer_addr, PMPI_Count *size);
 int PMPI_Ibsend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm,
-                PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                PMPI_Request *request) ;
 int PMPI_Ibsend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                   PMPI_Comm comm, PMPI_Request *request)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                  ;
 int PMPI_Improbe(int source, int tag, PMPI_Comm comm, int *flag, PMPI_Message *message,
                  PMPI_Status *status);
 int PMPI_Imrecv(void *buf, int count, PMPI_Datatype datatype, PMPI_Message *message,
-                PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                PMPI_Request *request) ;
 int PMPI_Imrecv_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, PMPI_Message *message,
-                  PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                  PMPI_Request *request) ;
 int PMPI_Iprobe(int source, int tag, PMPI_Comm comm, int *flag, PMPI_Status *status)
    ;
 int PMPI_Irecv(void *buf, int count, PMPI_Datatype datatype, int source, int tag, PMPI_Comm comm,
-               PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+               PMPI_Request *request) ;
 int PMPI_Irecv_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int source, int tag,
                  PMPI_Comm comm, PMPI_Request *request)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                 ;
 int PMPI_Irsend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm,
-                PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                PMPI_Request *request) ;
 int PMPI_Irsend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                   PMPI_Comm comm, PMPI_Request *request)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                  ;
 int PMPI_Isend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm,
-               PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+               PMPI_Request *request) ;
 int PMPI_Isend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                  PMPI_Comm comm, PMPI_Request *request)
-                 MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                 ;
 int PMPI_Isendrecv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, int dest, int sendtag,
                    void *recvbuf, int recvcount, PMPI_Datatype recvtype, int source, int recvtag,
                    PMPI_Comm comm, PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(6,8);
+                   ;
 int PMPI_Isendrecv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, int dest,
                      int sendtag, void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                      int source, int recvtag, PMPI_Comm comm, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(6,8);
+                     ;
 int PMPI_Isendrecv_replace(void *buf, int count, PMPI_Datatype datatype, int dest, int sendtag,
                            int source, int recvtag, PMPI_Comm comm, PMPI_Request *request)
-                           MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                           ;
 int PMPI_Isendrecv_replace_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest,
                              int sendtag, int source, int recvtag, PMPI_Comm comm,
                              PMPI_Request *request)
-                             MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                             ;
 int PMPI_Issend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm,
-                PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                PMPI_Request *request) ;
 int PMPI_Issend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                   PMPI_Comm comm, PMPI_Request *request)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                  ;
 int PMPI_Mprobe(int source, int tag, PMPI_Comm comm, PMPI_Message *message, PMPI_Status *status)
    ;
 int PMPI_Mrecv(void *buf, int count, PMPI_Datatype datatype, PMPI_Message *message,
-               PMPI_Status *status) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+               PMPI_Status *status) ;
 int PMPI_Mrecv_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, PMPI_Message *message,
-                 PMPI_Status *status) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                 PMPI_Status *status) ;
 int PMPI_Probe(int source, int tag, PMPI_Comm comm, PMPI_Status *status);
 int PMPI_Recv(void *buf, int count, PMPI_Datatype datatype, int source, int tag, PMPI_Comm comm,
-              PMPI_Status *status) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+              PMPI_Status *status) ;
 int PMPI_Recv_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int source, int tag,
                 PMPI_Comm comm, PMPI_Status *status)
-                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                ;
 int PMPI_Recv_init(void *buf, int count, PMPI_Datatype datatype, int source, int tag, PMPI_Comm comm,
-                   PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                   PMPI_Request *request) ;
 int PMPI_Recv_init_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int source, int tag,
                      PMPI_Comm comm, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                     ;
 int PMPI_Rsend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm)
-    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+    ;
 int PMPI_Rsend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
-                 PMPI_Comm comm) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                 PMPI_Comm comm) ;
 int PMPI_Rsend_init(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
                     PMPI_Comm comm, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                    ;
 int PMPI_Rsend_init_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                       PMPI_Comm comm, PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                      ;
 int PMPI_Send(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm)
-    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+    ;
 int PMPI_Send_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
-                PMPI_Comm comm) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                PMPI_Comm comm) ;
 int PMPI_Send_init(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
                    PMPI_Comm comm, PMPI_Request *request)
-                   MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                   ;
 int PMPI_Send_init_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                      PMPI_Comm comm, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                     ;
 int PMPI_Sendrecv(const void *sendbuf, int sendcount, PMPI_Datatype sendtype, int dest, int sendtag,
                   void *recvbuf, int recvcount, PMPI_Datatype recvtype, int source, int recvtag,
                   PMPI_Comm comm, PMPI_Status *status)
-                  MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(6,8);
+                  ;
 int PMPI_Sendrecv_c(const void *sendbuf, PMPI_Count sendcount, PMPI_Datatype sendtype, int dest,
                     int sendtag, void *recvbuf, PMPI_Count recvcount, PMPI_Datatype recvtype,
                     int source, int recvtag, PMPI_Comm comm, PMPI_Status *status)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(6,8);
+                    ;
 int PMPI_Sendrecv_replace(void *buf, int count, PMPI_Datatype datatype, int dest, int sendtag,
                           int source, int recvtag, PMPI_Comm comm, PMPI_Status *status)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                          ;
 int PMPI_Sendrecv_replace_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest,
                             int sendtag, int source, int recvtag, PMPI_Comm comm,
                             PMPI_Status *status)
-                            MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                            ;
 int PMPI_Ssend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag, PMPI_Comm comm)
-    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+    ;
 int PMPI_Ssend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
-                 PMPI_Comm comm) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                 PMPI_Comm comm) ;
 int PMPI_Ssend_init(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
                     PMPI_Comm comm, PMPI_Request *request)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                    ;
 int PMPI_Ssend_init_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                       PMPI_Comm comm, PMPI_Request *request)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                      ;
 int PMPI_Cancel(PMPI_Request *request);
 int PMPI_Grequest_complete(PMPI_Request request);
 int PMPI_Grequest_start(PMPI_Grequest_query_function *query_fn, PMPI_Grequest_free_function *free_fn,
@@ -981,24 +981,24 @@ int PMPI_Waitsome(int incount, PMPI_Request array_of_requests[], int *outcount,
                   int array_of_indices[], PMPI_Status *array_of_statuses);
 int PMPIX_Grequest_start(PMPI_Grequest_query_function *query_fn, PMPI_Grequest_free_function *free_fn,
                          PMPI_Grequest_cancel_function *cancel_fn,
-                         MPIX_Grequest_poll_function *poll_fn, MPIX_Grequest_wait_function *wait_fn,
+                         PMPIX_Grequest_poll_function *poll_fn, PMPIX_Grequest_wait_function *wait_fn,
                          void *extra_state, PMPI_Request *request);
 int PMPIX_Grequest_class_create(PMPI_Grequest_query_function *query_fn,
                                 PMPI_Grequest_free_function *free_fn,
                                 PMPI_Grequest_cancel_function *cancel_fn,
-                                MPIX_Grequest_poll_function *poll_fn,
-                                MPIX_Grequest_wait_function *wait_fn,
-                                MPIX_Grequest_class *greq_class);
-int PMPIX_Grequest_class_allocate(MPIX_Grequest_class greq_class, void *extra_state,
+                                PMPIX_Grequest_poll_function *poll_fn,
+                                PMPIX_Grequest_wait_function *wait_fn,
+                                PMPIX_Grequest_class *greq_class);
+int PMPIX_Grequest_class_allocate(PMPIX_Grequest_class greq_class, void *extra_state,
                                   PMPI_Request *request);
 int PMPI_Accumulate(const void *origin_addr, int origin_count, PMPI_Datatype origin_datatype,
                     int target_rank, PMPI_Aint target_disp, int target_count,
                     PMPI_Datatype target_datatype, PMPI_Op op, PMPI_Win win)
-                    MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                    ;
 int PMPI_Accumulate_c(const void *origin_addr, PMPI_Count origin_count, PMPI_Datatype origin_datatype,
                       int target_rank, PMPI_Aint target_disp, PMPI_Count target_count,
                       PMPI_Datatype target_datatype, PMPI_Op op, PMPI_Win win)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                      ;
 int PMPI_Alloc_mem(PMPI_Aint size, PMPI_Info info, void *baseptr);
 int PMPI_Compare_and_swap(const void *origin_addr, const void *compare_addr, void *result_addr,
                           PMPI_Datatype datatype, int target_rank, PMPI_Aint target_disp,
@@ -1009,65 +1009,65 @@ int PMPI_Fetch_and_op(const void *origin_addr, void *result_addr, PMPI_Datatype 
 int PMPI_Free_mem(void *base);
 int PMPI_Get(void *origin_addr, int origin_count, PMPI_Datatype origin_datatype, int target_rank,
              PMPI_Aint target_disp, int target_count, PMPI_Datatype target_datatype, PMPI_Win win)
-             MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+             ;
 int PMPI_Get_c(void *origin_addr, PMPI_Count origin_count, PMPI_Datatype origin_datatype,
                int target_rank, PMPI_Aint target_disp, PMPI_Count target_count,
                PMPI_Datatype target_datatype, PMPI_Win win)
-               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+               ;
 int PMPI_Get_accumulate(const void *origin_addr, int origin_count, PMPI_Datatype origin_datatype,
                         void *result_addr, int result_count, PMPI_Datatype result_datatype,
                         int target_rank, PMPI_Aint target_disp, int target_count,
                         PMPI_Datatype target_datatype, PMPI_Op op, PMPI_Win win)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                        ;
 int PMPI_Get_accumulate_c(const void *origin_addr, PMPI_Count origin_count,
                           PMPI_Datatype origin_datatype, void *result_addr, PMPI_Count result_count,
                           PMPI_Datatype result_datatype, int target_rank, PMPI_Aint target_disp,
                           PMPI_Count target_count, PMPI_Datatype target_datatype, PMPI_Op op,
                           PMPI_Win win)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                          ;
 int PMPI_Put(const void *origin_addr, int origin_count, PMPI_Datatype origin_datatype,
              int target_rank, PMPI_Aint target_disp, int target_count, PMPI_Datatype target_datatype,
-             PMPI_Win win) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+             PMPI_Win win) ;
 int PMPI_Put_c(const void *origin_addr, PMPI_Count origin_count, PMPI_Datatype origin_datatype,
                int target_rank, PMPI_Aint target_disp, PMPI_Count target_count,
                PMPI_Datatype target_datatype, PMPI_Win win)
-               MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+               ;
 int PMPI_Raccumulate(const void *origin_addr, int origin_count, PMPI_Datatype origin_datatype,
                      int target_rank, PMPI_Aint target_disp, int target_count,
                      PMPI_Datatype target_datatype, PMPI_Op op, PMPI_Win win, PMPI_Request *request)
-                     MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                     ;
 int PMPI_Raccumulate_c(const void *origin_addr, PMPI_Count origin_count,
                        PMPI_Datatype origin_datatype, int target_rank, PMPI_Aint target_disp,
                        PMPI_Count target_count, PMPI_Datatype target_datatype, PMPI_Op op, PMPI_Win win,
                        PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                       ;
 int PMPI_Rget(void *origin_addr, int origin_count, PMPI_Datatype origin_datatype, int target_rank,
               PMPI_Aint target_disp, int target_count, PMPI_Datatype target_datatype, PMPI_Win win,
-              PMPI_Request *request) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+              PMPI_Request *request) ;
 int PMPI_Rget_c(void *origin_addr, PMPI_Count origin_count, PMPI_Datatype origin_datatype,
                 int target_rank, PMPI_Aint target_disp, PMPI_Count target_count,
                 PMPI_Datatype target_datatype, PMPI_Win win, PMPI_Request *request)
-                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                ;
 int PMPI_Rget_accumulate(const void *origin_addr, int origin_count, PMPI_Datatype origin_datatype,
                          void *result_addr, int result_count, PMPI_Datatype result_datatype,
                          int target_rank, PMPI_Aint target_disp, int target_count,
                          PMPI_Datatype target_datatype, PMPI_Op op, PMPI_Win win,
                          PMPI_Request *request)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                         ;
 int PMPI_Rget_accumulate_c(const void *origin_addr, PMPI_Count origin_count,
                            PMPI_Datatype origin_datatype, void *result_addr, PMPI_Count result_count,
                            PMPI_Datatype result_datatype, int target_rank, PMPI_Aint target_disp,
                            PMPI_Count target_count, PMPI_Datatype target_datatype, PMPI_Op op,
                            PMPI_Win win, PMPI_Request *request)
-                           MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3) MPICH_ATTR_POINTER_WITH_TYPE_TAG(4,6);
+                           ;
 int PMPI_Rput(const void *origin_addr, int origin_count, PMPI_Datatype origin_datatype,
               int target_rank, PMPI_Aint target_disp, int target_count, PMPI_Datatype target_datatype,
               PMPI_Win win, PMPI_Request *request)
-              MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+              ;
 int PMPI_Rput_c(const void *origin_addr, PMPI_Count origin_count, PMPI_Datatype origin_datatype,
                 int target_rank, PMPI_Aint target_disp, PMPI_Count target_count,
                 PMPI_Datatype target_datatype, PMPI_Win win, PMPI_Request *request)
-                MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                ;
 int PMPI_Win_allocate(PMPI_Aint size, int disp_unit, PMPI_Info info, PMPI_Comm comm, void *baseptr,
                       PMPI_Win *win);
 int PMPI_Win_allocate_c(PMPI_Aint size, PMPI_Aint disp_unit, PMPI_Info info, PMPI_Comm comm,
@@ -1128,75 +1128,75 @@ int PMPI_Publish_name(const char *service_name, PMPI_Info info, const char *port
    ;
 int PMPI_Unpublish_name(const char *service_name, PMPI_Info info, const char *port_name)
    ;
-int PMPIX_Stream_create(PMPI_Info info, MPIX_Stream *stream);
-int PMPIX_Stream_free(MPIX_Stream *stream);
-int PMPIX_Stream_comm_create(PMPI_Comm comm, MPIX_Stream stream, PMPI_Comm *newcomm)
+int PMPIX_Stream_create(PMPI_Info info, PMPIX_Stream *stream);
+int PMPIX_Stream_free(PMPIX_Stream *stream);
+int PMPIX_Stream_comm_create(PMPI_Comm comm, PMPIX_Stream stream, PMPI_Comm *newcomm)
    ;
-int PMPIX_Stream_comm_create_multiplex(PMPI_Comm comm, int count, MPIX_Stream array_of_streams[],
+int PMPIX_Stream_comm_create_multiplex(PMPI_Comm comm, int count, PMPIX_Stream array_of_streams[],
                                        PMPI_Comm *newcomm);
-int PMPIX_Comm_get_stream(PMPI_Comm comm, int idx, MPIX_Stream *stream);
-int PMPIX_Stream_progress(MPIX_Stream stream);
-int PMPIX_Start_progress_thread(MPIX_Stream stream);
-int PMPIX_Stop_progress_thread(MPIX_Stream stream);
+int PMPIX_Comm_get_stream(PMPI_Comm comm, int idx, PMPIX_Stream *stream);
+int PMPIX_Stream_progress(PMPIX_Stream stream);
+int PMPIX_Start_progress_thread(PMPIX_Stream stream);
+int PMPIX_Stop_progress_thread(PMPIX_Stream stream);
 int PMPIX_Stream_send(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
                       PMPI_Comm comm, int source_stream_index, int dest_stream_index)
-                      MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                      ;
 int PMPIX_Stream_send_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                         PMPI_Comm comm, int source_stream_index, int dest_stream_index)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                        ;
 int PMPIX_Stream_isend(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
                        PMPI_Comm comm, int source_stream_index, int dest_stream_index,
                        PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                       ;
 int PMPIX_Stream_isend_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
                          PMPI_Comm comm, int source_stream_index, int dest_stream_index,
                          PMPI_Request *request)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                         ;
 int PMPIX_Stream_recv(void *buf, int count, PMPI_Datatype datatype, int source, int tag,
                       PMPI_Comm comm, int source_stream_index, int dest_stream_index,
-                      PMPI_Status *status) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                      PMPI_Status *status) ;
 int PMPIX_Stream_recv_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int source, int tag,
                         PMPI_Comm comm, int source_stream_index, int dest_stream_index,
-                        PMPI_Status *status) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                        PMPI_Status *status) ;
 int PMPIX_Stream_irecv(void *buf, int count, PMPI_Datatype datatype, int source, int tag,
                        PMPI_Comm comm, int source_stream_index, int dest_stream_index,
                        PMPI_Request *request)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                       ;
 int PMPIX_Stream_irecv_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int source, int tag,
                          PMPI_Comm comm, int source_stream_index, int dest_stream_index,
                          PMPI_Request *request)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                         ;
 int PMPIX_Send_enqueue(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
-                       PMPI_Comm comm) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                       PMPI_Comm comm) ;
 int PMPIX_Send_enqueue_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest, int tag,
-                         PMPI_Comm comm) MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                         PMPI_Comm comm) ;
 int PMPIX_Recv_enqueue(void *buf, int count, PMPI_Datatype datatype, int source, int tag,
                        PMPI_Comm comm, PMPI_Status *status)
-                       MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                       ;
 int PMPIX_Recv_enqueue_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int source, int tag,
                          PMPI_Comm comm, PMPI_Status *status)
-                         MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                         ;
 int PMPIX_Isend_enqueue(const void *buf, int count, PMPI_Datatype datatype, int dest, int tag,
                         PMPI_Comm comm, PMPI_Request *request)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                        ;
 int PMPIX_Isend_enqueue_c(const void *buf, PMPI_Count count, PMPI_Datatype datatype, int dest,
                           int tag, PMPI_Comm comm, PMPI_Request *request)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                          ;
 int PMPIX_Irecv_enqueue(void *buf, int count, PMPI_Datatype datatype, int source, int tag,
                         PMPI_Comm comm, PMPI_Request *request)
-                        MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                        ;
 int PMPIX_Irecv_enqueue_c(void *buf, PMPI_Count count, PMPI_Datatype datatype, int source, int tag,
                           PMPI_Comm comm, PMPI_Request *request)
-                          MPICH_ATTR_POINTER_WITH_TYPE_TAG(1,3);
+                          ;
 int PMPIX_Wait_enqueue(PMPI_Request *request, PMPI_Status *status);
 int PMPIX_Waitall_enqueue(int count, PMPI_Request array_of_requests[],
                           PMPI_Status *array_of_statuses);
 int PMPIX_Allreduce_enqueue(const void *sendbuf, void *recvbuf, int count, PMPI_Datatype datatype,
                             PMPI_Op op, PMPI_Comm comm)
-                            MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                            ;
 int PMPIX_Allreduce_enqueue_c(const void *sendbuf, void *recvbuf, PMPI_Count count,
                               PMPI_Datatype datatype, PMPI_Op op, PMPI_Comm comm)
-                              MPICH_ATTR_POINTER_WITH_TYPE_TAG(2,4);
+                              ;
 int PMPIX_Threadcomm_init(PMPI_Comm comm, int num_threads, PMPI_Comm *newthreadcomm)
    ;
 int PMPIX_Threadcomm_free(PMPI_Comm *threadcomm);
