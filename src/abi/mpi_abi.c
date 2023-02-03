@@ -1,10 +1,6 @@
 #include "mpi_abi.h"
 #include "mpi_abi_internal.h"
 
-/* hacky way with the header.
- * We need the types in mpi.h but not the MPI func decls in mpi_proto.h
- * But we also need the PMPI func decls, so separating them in mpi_pmpi.h
- */
 #include "pmpi.h"
 
 int MPI_Init(int *argc, char ***argv)
@@ -27,7 +23,8 @@ int MPI_Send(const void *buf, int count, MPI_Datatype datatype, int dest, int ta
     return PMPI_Send(buf, count, DATATYPE_TO_PMPI(datatype), dest, tag, COMM_TO_PMPI(comm));
 }
 
-int MPI_Recv(void *buf, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm comm, MPI_Status *status)
+int MPI_Recv(void *buf, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm comm,
+             MPI_Status * status)
 {
     PMPI_Status status_i;
     PMPI_Status *status_p;
