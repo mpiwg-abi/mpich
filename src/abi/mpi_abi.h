@@ -11,16 +11,12 @@ typedef intptr_t MPI_Aint;
 typedef long long MPI_Offset;
 typedef MPI_Offset MPI_Count;
 
-#if 1
-typedef struct MPI_Status MPI_Status;
-#else
 typedef struct MPI_Status {
     int MPI_SOURCE;
     int MPI_TAG;
     int MPI_ERROR;
     int reserved[5];
 } MPI_Status;
-#endif
 
 extern MPI_Status * MPI_STATUS_IGNORE;
 extern MPI_Status * MPI_STATUSES_IGNORE;

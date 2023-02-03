@@ -418,9 +418,9 @@ static const PMPI_Datatype mpich_mpi_offset MPICH_ATTR_TYPE_TAG(PMPI_Offset) = P
 typedef struct PMPI_Status {
     int count_lo;
     int count_hi_and_cancelled;
-    int PMPI_SOURCE;
-    int PMPI_TAG;
-    int PMPI_ERROR;
+    int MPI_SOURCE;
+    int MPI_TAG;
+    int MPI_ERROR;
 } PMPI_Status;
 
 /* User combination function */
