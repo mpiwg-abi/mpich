@@ -2,8 +2,8 @@
 
 ABI_DIR=__INSTALL_DESTDIR__
 ABI_INC=$ABI_DIR/include
-ABI_LIB=$ABI_DIR/bin
+ABI_LIB=$ABI_DIR/lib
 
 CC=gcc
 
-${CC} -DMPI_ABI -I${ABI_INC} $* -Wl,-rpath=${ABI_LIB} -L${ABI_LIB} -lmpi_abi -lmpi
+${CC} -DMPI_ABI -I${ABI_INC} $* -Wl,-rpath=${ABI_LIB} -L${ABI_LIB} -lmpi_abi

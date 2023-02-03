@@ -10,7 +10,7 @@ libmpi_abi.a: $(OBJS)
 	$(CC) -fPIC -o $@ -c $<
 
 install: libmpi_abi.a
-	cp libmpi_abi.so $(DESTDIR)/bin
+	cp libmpi_abi.so $(DESTDIR)/lib
 	cp mpi_abi.h $(DESTDIR)/include
 	sed -e "s|__INSTALL_DESTDIR__|$(DESTDIR)|" mpicc_abi.in > mpicc_abi
 	install -m 755 mpicc_abi $(DESTDIR)/bin

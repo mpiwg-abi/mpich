@@ -58,3 +58,26 @@ int MPI_Comm_rank(MPI_Comm comm, int *rank)
     return PMPI_Comm_rank(COMM_TO_PMPI(comm), rank);
 }
 
+int MPI_Comm_free(MPI_Comm *comm)
+{
+    PMPI_Comm comm_i;
+    comm_i = COMM_TO_PMPI(*comm);
+
+    int ret = PMPI_Comm_free(&comm_i);
+
+    *comm = COMM_FROM_PMPI(comm_i);
+
+    return ret;
+}
+
+int MPI_Type_free(MPI_Datatype *datatype)
+{
+    PMPI_Datatype datatype_i;
+    datatype_i = DATATYPE_TO_PMPI(*datatype);
+
+    int ret = PMPI_Type_free(&datatype_i);
+
+    *datatype = DATATYPE_FROM_PMPI(datatype_i);
+
+    return ret;
+}
