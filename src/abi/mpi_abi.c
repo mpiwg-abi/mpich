@@ -17,6 +17,11 @@ int MPI_Finalize(void)
     return PMPI_Finalize();
 }
 
+int MPI_Abort(MPI_Comm comm, int errorcode)
+{
+    return PMPI_Abort(COMM_TO_PMPI(comm), errorcode);
+}
+
 int MPI_Send(const void *buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
 {
     return PMPI_Send(buf, count, DATATYPE_TO_PMPI(datatype), dest, tag, COMM_TO_PMPI(comm));

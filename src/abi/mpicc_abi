@@ -7,4 +7,4 @@ ABI_LIB=$ABI_DIR/bin
 
 CC=gcc
 
-${CC} -I${ABI_INC} $* -Wl,-rpath=${ABI_LIB} -L${ABI_LIB} -lmpi_abi -lmpi
+${CC} -DMPI_ABI -I${ABI_INC} $* -Wl,-rpath=${ABI_LIB} -L${ABI_LIB} -lmpi_abi -lmpi

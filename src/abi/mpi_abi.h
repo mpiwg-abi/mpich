@@ -37,6 +37,7 @@ extern MPI_Request MPI_REQUEST_NULL;
 /* core set */
 int MPI_Init(int *argc, char ***argv);
 int MPI_Finalize(void);
+int MPI_Abort(MPI_Comm comm, int errorcode);
 int MPI_Send(const void *buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm);
 int MPI_Recv(void *buf, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm comm, MPI_Status *status);
 int MPI_Wait(MPI_Request *request, MPI_Status *status);
