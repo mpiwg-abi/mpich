@@ -72,7 +72,7 @@ ret=0
 for file in $filestring
 do
     if [[ ($file == *.c || $file == *.h || $file == *.c.in || $file == *.h.in) &&
-          !($file == *mpi.h.in || $file == *mpio.h.in || $file == *mpitestcxx.h || $file == src/mpid/ch3/* || $file == doc/*) ]]; then
+          !($file == *mpi.h.in || $file == *mpio.h.in || $file == *mpitestcxx.h || $file == src/mpid/ch3/* || $file == doc/* || $file == *mpi_abi.h) ]]; then
         cp ${file} ${TMP_FILENAME}
         maint/code-cleanup.bash ${file}
         git --no-pager diff ${file} ${TMP_FILENAME}
