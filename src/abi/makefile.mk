@@ -1,3 +1,5 @@
+DESTDIR ?= $(HOME)
+
 CC=mpicc
 OBJS=mpi_abi.o mpi_abi_internal.o
 
@@ -8,9 +10,10 @@ libmpi_abi.a: $(OBJS)
 	$(CC) -fPIC -o $@ -c $<
 
 install: libmpi_abi.a
-	cp libmpi_abi.so $(HOME)/bin
-	cp mpi_abi.h $(HOME)/include
-	install -m 755 mpicc_abi $(HOME)/bin
+	cp libmpi_abi.so $(DESTDIR)/bin
+	cp mpi_abi.h $(DESTDIR)/include
+	sed -e "s|__INSTALL_DESTDIR__|$(DESTDIR)|" mpicc_abi.in > mpicc_abi
+	install -m 755 mpicc_abi $(DESTDIR)/bin
 
 clean:
 	rm -f $(OBJS) libmpi_abi.so

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# HACK: assume install to $HOME !!
-ABI_DIR=$HOME
+ABI_DIR=__INSTALL_DESTDIR__
 ABI_INC=$ABI_DIR/include
 ABI_LIB=$ABI_DIR/bin
 
